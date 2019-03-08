@@ -1,0 +1,32 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-config-airbnb",
+        "tslint-config-prettier",
+        "tslint-immutable",
+        "tslint-clean-code"
+    ],
+    "linterOptions": {
+        "exclude": ["src/**/*.js", "node_modules/**/*.ts"]
+    },
+    "rules": {
+        "interface-name": false,
+        "import-name": false,
+        "member-access": false,
+        "no-console": false,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+        "no-submodule-imports": false,
+        "no-implicit-dependencies": false,
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore",
+            "allow-pascal-case"
+        ]
+    },
+    "env": {
+        "node": true
+    }
+}

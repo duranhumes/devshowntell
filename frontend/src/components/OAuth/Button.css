@@ -1,0 +1,87 @@
+.button-wrapper {
+    height: 300px;
+}
+
+.fab {
+    font-size: 6em;
+    color: white;
+}
+
+button {
+    border-radius: 50%;
+    width: 215px;
+    height: 215px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+    transform: scale(0.7);
+}
+
+button:hover {
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+button.disabled {
+    background-color: #999 !important;
+    cursor: no-drop;
+}
+
+button.disabled:hover {
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+button.disabled:hover span {
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+button span {
+    font-size: 10em !important;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    color: #fff;
+}
+
+button:hover span {
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(-1.1deg);
+}
+
+/* Twitter */
+button.twitter {
+    border: 3px solid #ffffff;
+    background: #433e90;
+}
+
+button.twitter:hover {
+    background: #326ada;
+}
+
+/* Google */
+button.google {
+    border: 3px solid #ffffff;
+    background: #0057e7;
+}
+
+button.google:hover {
+    background: #008744;
+}
+
+/* Facebook */
+button.facebook {
+    border: 3px solid #ffffff;
+    background: #8b9dc3;
+}
+
+button.facebook:hover {
+    background: #3b5998;
+}
+
+/* Github */
+button.github {
+    border: 3px solid #ffffff;
+    background: #767676;
+}
+
+button.github:hover {
+    background: #6e5494;
+}

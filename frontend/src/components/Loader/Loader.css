@@ -1,0 +1,51 @@
+.loading-wrapper,
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loading {
+    width: 200px;
+    height: 200px;
+}
+
+.loading .background {
+    border-radius: 50%;
+    background: #6762a6;
+    border: 3px solid #c9c3e6;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    animation: pulse-colors 2s infinite alternate linear;
+}
+
+.loading i {
+    margin: 25px 5px 5px 55px;
+    float: left;
+    font-size: 10em !important;
+    color: #fff;
+    animation: pulse-icon 2s infinite alternate linear;
+}
+
+@keyframes pulse-icon {
+    from {
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+    }
+    to {
+        text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.55);
+    }
+}
+
+@keyframes pulse-colors {
+    from {
+        background: #c9c3e6;
+        border: 3px solid #a29ccc;
+    }
+    to {
+        background: #6762a6;
+        border: 3px solid #c9c3e6;
+    }
+}

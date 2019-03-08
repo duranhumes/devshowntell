@@ -1,0 +1,13 @@
+**/node_modules
+**/.DS_Store
+**/.env
+npm-*.log*
+yarn-*.log*
+**/logs
+**/data
+**/build
+**/storage
+**/temp
+**/coverage
+**/keys
+public/

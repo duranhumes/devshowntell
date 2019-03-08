@@ -1,0 +1,23 @@
+version: '3.5'
+services:
+    api:
+        container_name: api
+        restart: unless-stopped
+        build: .
+        env_file:
+            - ./.env
+        environment:
+            TZ: America/New_York
+        volumes:
+            - .:/usr/src/app
+            - /usr/src/app/node_modules/
+        ports:
+            - '${APP_PORT}:8000'
+        networks:
+            boilerplate-network:
+                aliases:
+                    - api
+
+networks:
+    boilerplate-network:
+        driver: bridge
